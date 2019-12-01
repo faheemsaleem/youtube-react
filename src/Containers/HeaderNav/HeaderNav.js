@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Menu, Form, Input, Icon, Image } from "semantic-ui-react";
+import { Link } from "react-router-dom";
 import "./HeaderNav.scss";
 
 class HeaderNav extends Component {
   render() {
     return (
       <Menu borderless className="top-menu" fixed="top">
-        <Menu.Item className="logo">
-          <a href="/">EwigTube</a>
+        <Menu.Item header className="logo">
+          <span>EwigTube</span>
         </Menu.Item>
         <Menu.Menu className="nav-container">
           <Menu.Item className="search-input">
